@@ -61,10 +61,10 @@ body {
   border:none;
   cursor:pointer;
 
-  /*position:fixed;*/
+  position:fixed;
   width:10%;
-  /*bottom : 10%;
-  left : 25%;*/
+  bottom : 10%;
+  left : 25%;
 
   /* Disable text selection: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
   -webkit-touch-callout: none; /* iOS Safari */
