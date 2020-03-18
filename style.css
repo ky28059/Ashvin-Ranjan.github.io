@@ -43,6 +43,7 @@ body {
 }
 
 .footer {
+	text-align: center;
 	font-family: Helvetica, Arial, Sans-Serif;
 	touch-action: manipulation;
 	/* Disable text selection: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
@@ -52,4 +53,8 @@ body {
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	user-select: none; /* Chrome, Opera and Firefox */
 
+}
+
+.footer a{
+	color: white;
 }
