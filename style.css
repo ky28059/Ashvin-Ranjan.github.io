@@ -43,7 +43,7 @@ body {
 }
 
 .footer {
-
+	font-family: Helvetica, Arial, Sans-Serif;
 	touch-action: manipulation;
 	/* Disable text selection: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
 	-webkit-touch-callout: none; /* iOS Safari */
