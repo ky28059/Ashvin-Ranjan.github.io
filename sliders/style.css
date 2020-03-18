@@ -21,6 +21,8 @@ body {
 	border:none;
 	cursor:pointer;
 
+	margin-top: 25px;
+
 	/*position:fixed;*/
 	width:10%;
 	/*bottom : 10%;
