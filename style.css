@@ -43,6 +43,8 @@ body {
 }
 
 .footer {
+	color: white;
+	font-size: 25px;
 	position: absolute;
 	bottom: 0;
 	text-align: center;
@@ -57,6 +59,4 @@ body {
 
 }
 
-.footer a{
-	color: white;
-}
+
