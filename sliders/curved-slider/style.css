@@ -79,3 +79,9 @@ body {
   */
   touch-action: manipulation; 
 }
+
+.text{
+  font-family: sans-serif;
+  color: #fff;
+  text-align: center;
+}
