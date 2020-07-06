@@ -16,10 +16,11 @@ function createText(){
 	var txt = "";
 	var fulltext = document.getElementById("inp").value;
 	for(var i = 0; i < fulltext.length; i ++){
-		try{
+		if(fulltext.charAt(i) in chars){
+			if()
 			txt += chars[fulltext.charAt(i)];
 		}
-		catch{
+		else{
 			txt += fulltext.charAt(i);
 		}
 	}
