@@ -64,7 +64,3 @@ body {
 ::-ms-input-placeholder { /* Microsoft Edge */
  color: white;
 }
-
-input, select, textarea{
-    color: #ff0000;
-}
