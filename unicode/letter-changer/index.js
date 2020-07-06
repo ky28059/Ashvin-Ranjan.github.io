@@ -11,15 +11,16 @@ let chars = {
 	"E" : u"\u0500",
 };
 
-document.getElementById("sub").addEventListener('click', function(){
-    var txt = "";
-    for(var i = 0; i < document.getElementById("inp").length; i ++){
-      try{
-        txt += chars[txt];
-      }
-      catch{
-        txt += txt.charAt(i);
-      }
-    }
-    document.getElementById("textout").innerHTML = txt;
-});
+
+function createText(){
+	var txt = "";
+	for(var i = 0; i < document.getElementById("inp").length; i ++){
+		try{
+			txt += chars[txt];
+		}
+		catch{
+			txt += txt.charAt(i);
+		}
+	}
+	document.getElementById("textout").innerHTML = txt;
+}
