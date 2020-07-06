@@ -47,8 +47,9 @@ body {
 }
 
 #inp {
-	border: 10 solid white;
+	border: 1 solid #ffffff;
 	background-color: #1c1c1c;
+	color: #ffffff
 }
 
 ::placeholder {
