@@ -14,12 +14,13 @@ let chars = {
 
 function createText(){
 	var txt = "";
-	for(var i = 0; i < document.getElementById("inp").length; i ++){
+	var fulltext = document.getElementById("inp").value;
+	for(var i = 0; i < fulltext.length; i ++){
 		try{
-			txt += chars[txt];
+			txt += chars[fulltext.charAt(i)];
 		}
 		catch{
-			txt += txt.charAt(i);
+			txt += fulltext.charAt(i);
 		}
 	}
 	document.getElementById("textout").innerHTML = txt;
