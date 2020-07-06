@@ -9,7 +9,8 @@ body {
 }
 
 .center{
-	padding-top: 40%;
+	position: fixed; /* or absolute */
+	top: 50%;
 	text-align: center;
 }
 
