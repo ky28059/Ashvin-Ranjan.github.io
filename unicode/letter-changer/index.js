@@ -17,7 +17,6 @@ function createText(){
 	var fulltext = document.getElementById("inp").value;
 	for(var i = 0; i < fulltext.length; i ++){
 		if(fulltext.charAt(i) in chars){
-			if()
 			txt += chars[fulltext.charAt(i)];
 		}
 		else{
