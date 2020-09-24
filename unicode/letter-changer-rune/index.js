@@ -29,7 +29,7 @@ let chars = {
 	
 };
 
-//document.getElementById("Submit").addEventListener('sub', createText);
+document.getElementById("sub").addEventListener('click', createText);
 
 function createText(){
 	var txt = "";
