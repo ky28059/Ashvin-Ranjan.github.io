@@ -1,0 +1,43 @@
+body {
+  background-color: #1c1c1c;
+}
+
+.text{
+	font-family: sans-serif;
+	color: #fff;
+	text-align: center;
+}
+
+.button {
+	background-color: #4CAFFF;
+	
+	font-family: opensans;
+	text-align: center;
+	font-size: 25px;
+	padding: 10px 5px;
+	color: white;
+
+	outline-style:none;
+	border:none;
+	cursor:pointer;
+
+	margin-top: 25px;
+
+	/*position:fixed;*/
+	min-width:10%;
+	/*bottom : 10%;
+	left : 25%;*/
+
+	/* Disable text selection: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Chrome, Opera and Firefox */
+
+	/* 
+	Prevent double-tapping on button from zooming page on mobile
+	https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action
+	*/
+	touch-action: manipulation; 
+}
