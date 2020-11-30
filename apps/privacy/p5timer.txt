@@ -1,0 +1,1 @@
+We do not take any data because there is no place to store such data. And since there are no logins there would be no need for storing data.
