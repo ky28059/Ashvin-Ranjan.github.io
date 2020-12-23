@@ -1,0 +1,1 @@
+print "   *   ";for i 2{print "  ***  ";print " ***** ";print "*******"};for i 2{print "  |||  "};print "";print "";print "Happy Holdidays and hopes for a great 2021!";print "I am sorry that I was not able to send you something physical, but I hope you appreciate this, I have been working on this language for a long time now!"
