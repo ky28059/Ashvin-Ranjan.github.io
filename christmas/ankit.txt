@@ -1,0 +1,10 @@
+Hi Ankit baya, surprise! I made a christmas gift for you!
+
+Here is how to see it!
+
+1. download the code from the github repo at https://github.com/nbuilding/N-lang
+2. get the (somewhat) obfuscated .n file at ash.vin/christmas/[take a wild guess what the name is].n
+3. run the file by navigating to the python folder and running python n.py [the location of the .n file you downloaded, if it is in the python directory you don't need this]
+4. see what comes out!!!
+
+sorry if this is a underwhelming present, but I wanted to show you something that you might be interested in following as a gift!
