@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>家族のプロジェクト</title>
+		<style type="text/css">
+			body {
+				background-color: #1c1c1c;
+			}
+
+			.text{
+				font-family: sans-serif;
+				color: #fff;
+				text-align: center;
+				position:relative;
+			}
+
+			.content{
+				height: 100vh;
+				position:relative;
+			}
+
+			.floater{
+				height: 50vh;
+				position:absolute;
+			}
+
+			.button {
+				background-color: #4CAFFF;
+				
+				font-family: opensans;
+				text-align: center;
+				font-size: 25px;
+				padding: 10px 5px;
+				color: white;
+
+				outline-style:none;
+				border:none;
+				cursor:pointer;
+
+				margin-top: 25px;
+
+				/*position:fixed;*/
+				min-width:10%;
+				/*bottom : 10%;
+				left : 25%;*/
+
+				/* Disable text selection: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+				-webkit-touch-callout: none; /* iOS Safari */
+				-webkit-user-select: none; /* Safari */
+				-moz-user-select: none; /* Old versions of Firefox */
+				-ms-user-select: none; /* Internet Explorer/Edge */
+				user-select: none; /* Chrome, Opera and Firefox */
+
+				/* 
+				Prevent double-tapping on button from zooming page on mobile
+				https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action
+				*/
+				touch-action: manipulation; 
+			}
+		</style>
+		<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+<link rel="manifest" href="/icons/site.webmanifest">
+<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+</head>
+<body>
+	
+	<div class="text" id="main">
+		<h1>家族のプロジェクト</h1>
+		<button onclick="start()" class="button">Start!</button>
+	</div>
+	<script>
+		const start = () => {
+			document.getElementById("main").innerHTML = 
+			`
+			<h1>家族のプロジェクト</h1>
+			<div class="content">
+				<div class="floater" id="intro">&nbsp;</div>
+				<h2>わたしの家族です。家族は四人います</h2>
+			</div>
+			<div class="content">
+				<div class="floater" id="ankit">&nbsp;</div>
+				兄のなまえはアンッキト・ランジャンです。 <br/>
+				二十一歳です。 <br/>
+				バイオが上手です。 <br/>
+				兄はコンピュターが好きです。 <br/>
+				インド人とイギリス人です。 <br/>
+				兄はインド語と英語がはなせます。 <br/>
+				日本語がはなせません。 <br/>
+				しゅみはしゃしんです。 <br/>
+				肉が嫌いです。 <br/>
+				兄はプログラミングができます。 <br/>
+				<img src="./ankit.png">
+			</div>
+			<div class="content">
+				<div class="floater" id="jack">&nbsp;</div>
+				友達のなまえはジャクです。 <br/>
+				友達は十五歳です。 <br/>
+				友達のしゅみはコンピュターです。 <br/>
+				練習が嫌いです。 <br/>
+				友達はスポーツが上手です。 <br/>
+				英語とスペイン語がはなせます。 <br/>
+				日本語がはなせません。 <br/>
+				友達はパーコールができます。 <br/>
+				しゅっしんはパロ・アルトです。 <br/>
+				友達はゲームが好きです。 <br/>
+				<img src="./jack.png">
+			</div>
+			<div class="content">
+				<div class="floater" id="mama">&nbsp;</div>
+				母のなまえはマリカです。 <br/>
+				四十四歳です。 <br/>
+				生徒じゃありません。 <br/>
+				インド人とイギリス人です。 <br/>
+				母のしゅっしんはパロ・アルトです。 <br/>
+				母のしゅみはハイキングです。 <br/>
+				家族とがくが好きです。 <br/>
+				音が嫌いです。 <br/>
+				りょうりが上手です。 <br/>
+				かいがが下手です。 <br/>
+				インド語と英語が話なせます。 <br/>
+				日本語が話せません。 <br/>
+				クライミングができます。 <br/>
+				絵ができません。 <br/>
+				<img src="./mama.png">
+			</div>
+			<div class="content">
+				<div class="floater" id="papa">&nbsp;</div>
+				父のなまえはピッユシュ・ランジャンです。 <br/>
+				四十七歳です。 <br/>
+				父のしゅっしんはパロ・アルトです。 <br/>
+				ゲークが嫌いです。 <br/>
+				インド人です。 <br/>
+				日本語が話せません。 <br/>
+				英語とインド語が話せます。 <br/>
+				しゅみコンピューターです。 <br/>
+				どくしょが好きです。 <br/>
+				りょうりができます。 <br/>
+				父はきびしい人です。 <br/>
+				<img src="./papa.png">
+			</div>
+			<div class="content">
+				<div class="floater" id="me">&nbsp;</div>
+				わたしのなまえはアッシュビン・ランジャンです。 <br/>
+				弟です。 <br/>
+				十四歳です。 <br/>
+				ガン高校の一年生です。 <br/>
+				インド人とイギリス人です。 <br/>
+				しゅっしんはパロ・アルトです。 <br/>
+				しゅみはコンピューターです。 <br/>
+				ゲームが好きです。 <br/>
+				ハイキングが下手です。 <br/>
+				英語と日本語とインド語が話せます。 <br/>
+				スポーツができます。 <br/>
+				<img src="./me.png">
+			</div>
+			<div class="content">
+				<div class="floater" id="end">&nbsp;</div>
+				<h2>いじょうです</h2>
+			</div>
+			`;
+			checks = document.getElementsByClassName("floater");
+			for (let i = 0; i < checks.length; i++) {
+				players[i] = new Audio("./" + checks[i].id + ".mp3");
+			}
+			check_for_play();
+		}
+
+		const players = [];
+		let checks = [];
+		let current = -1;
+
+		const div_in_view = (div) => {
+			var rect = div.getBoundingClientRect();
+			return (
+				rect.y > 0 &&
+				window.innerHeight > rect.y + rect.height
+			);
+		}
+
+		const pause_all_audio = () => {
+			for (let i = 0; i < players.length; i++) {
+				players[i].pause();
+			}
+		}
+
+		const check_for_play = () => {
+			for (let i = 0; i < checks.length; i++) {
+				if(div_in_view(checks[i])) {
+					if (i != current) {
+						pause_all_audio();
+						players[i].play()
+						current = i;
+						console.log("change");
+					}
+				}
+			}
+		}
+
+		window.onscroll = check_for_play;
+		
+	</script>
+	
+</body>
+</html>
