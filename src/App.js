@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// React
+import React, { Component } from "react";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// Pages
+import Home from "./pages/Home";
+import PageNotFound from "./pages/PageNotFound";
+
+// Styling
+import { MuiThemeProvider } from "@material-ui/core/styles";
+import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
+import themeFile from "./utils/theme";
+
+const theme = createMuiTheme(themeFile);
+
+class App extends Component {
+  render() {
+    return (
+      <div className="main-background" style={{ backgroundColor: "#dddddd" }}>
+        <MuiThemeProvider theme={theme}>
+          <Router>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/*" component={PageNotFound} />
+            </Switch>
+          </Router>
+        </MuiThemeProvider>
+      </div>
+    );
+  }
 }
 
 export default App;
