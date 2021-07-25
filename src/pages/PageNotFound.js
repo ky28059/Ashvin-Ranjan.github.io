@@ -5,8 +5,12 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
-  text: {
-    writingMode: "tb-rl",
+  header: {
+    fontSize: 75,
+    marginBottom: "-1%",
+  },
+  main: {
+    fontSize: 30,
   },
 }));
 
@@ -15,7 +19,17 @@ const PageNotFound = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className={classes.text}>Not found</h1>
+        <h1 className={classes.header}>N</h1>
+        <span className={classes.main}>
+          o <br />
+          t <br />
+          <br />
+          f <br />
+          o <br />
+          u <br />
+          n <br />
+          d <br />
+        </span>
       </header>
     </div>
   );
