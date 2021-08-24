@@ -7,7 +7,7 @@ const PageNotFound = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <VerticalText text="Not found" />
+        <VerticalText bold text="Not found" />
       </header>
     </div>
   );

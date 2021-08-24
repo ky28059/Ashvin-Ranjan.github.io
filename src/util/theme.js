@@ -1,10 +1,9 @@
-import { createTheme } from "@material-ui/core/styles";
+import { createMuiTheme } from "@material-ui/core/styles";
 
-const theme = createTheme({
+const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#aaaaaa",
-      light: "#dddddd",
+      main: "#ff4400",
     },
     secondary: {
       light: "#0066ff",
@@ -34,19 +33,6 @@ const theme = createTheme({
     },
     inputField: {
       backgroundColor: "white",
-    },
-    link: {
-      textDecoration: "none",
-      color: "white",
-      textAlign: "none",
-    },
-    table: {
-      backgroundColor: "#424242",
-      border: "thin solid #515151",
-    },
-    tableItem: {
-      color: "white",
-      borderBottom: "thin solid #515151",
     },
   },
 });

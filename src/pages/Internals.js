@@ -21,17 +21,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const PageNotFound = () => {
+const Internals = () => {
   const classes = useStyles();
   return (
     <div className="App">
       <header className="App-header">
         <div className={classes.side}>
           <div className={classes.paddingHorizontal}>
-            <VerticalText
-              bold={false}
-              text="アッシュ・ドット・ビンの内部詳細"
-            />
+            <VerticalText text="アッシュ・ドット・ビンの内部詳細" />
           </div>
           <div className={classes.column}>
             <div className={classes.paddingBottom}>hello</div>
@@ -43,4 +40,4 @@ const PageNotFound = () => {
   );
 };
 
-export default PageNotFound;
+export default Internals;

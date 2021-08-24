@@ -22,11 +22,7 @@ const VerticalText = ({ text, bold }) => {
   const classes = useStyles();
   return (
     <Box className={classes.container}>
-      {bold ? (
-        <h1 className={classes.header}>{text.charAt(0)}</h1>
-      ) : (
-        <Box>{text.charAt(0)}</Box>
-      )}
+      <Box className={bold ? classes.header : ""}>{text.charAt(0)}</Box>
       <span className={classes.main}>
         {text
           .substr(1)
