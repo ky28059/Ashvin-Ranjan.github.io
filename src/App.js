@@ -10,6 +10,7 @@ import Internals from "./pages/Internals";
 import Stuff from "./pages/Stuff";
 import CyrillicTextGenerator from "./pages/CyrillicTextGenerator";
 import RuneTextGenerator from "./pages/RuneTextGenerator";
+import SimilarTextGenerator from "./pages/SimilarTextGenerator";
 import PageNotFound from "./pages/PageNotFound";
 
 // Styling
@@ -30,6 +31,11 @@ const App = () => {
               exact
               path="/stuff/cyrillic"
               component={CyrillicTextGenerator}
+            />
+            <Route
+              exact
+              path="/stuff/similar"
+              component={SimilarTextGenerator}
             />
             <Route component={PageNotFound} />
           </Switch>

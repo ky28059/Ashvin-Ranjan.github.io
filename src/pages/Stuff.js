@@ -60,6 +60,13 @@ const Stuff = () => {
               >
                 Cyrllic Text Generator
               </Button>
+              <Button
+                className={classes.button}
+                style={{ alignSelf: "center" }}
+                href="#/stuff/similar"
+              >
+                Similar Text Generator
+              </Button>
             </div>
             <Button
               className={classes.button}
