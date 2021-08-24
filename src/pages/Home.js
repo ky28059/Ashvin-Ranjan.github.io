@@ -2,13 +2,23 @@
 import React from "react";
 
 // MUI
+import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-//import { Tooltip } from "@material-ui/core/Tooltip";
-//import { Typography } from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme) => ({
-  header: {
-    fontSize: 75,
+  container: {
+    display: "flex",
+    alignContent: "center",
+    justifyContent: "center",
+    flexDirection: "row",
+  },
+  letters: {
+    marginRight: "5%",
+    fontSize: "400%",
+  },
+  link: {
+    textDecoration: "none",
+    color: "white",
   },
 }));
 
@@ -18,16 +28,43 @@ const Home = () => {
     <div className="App">
       <header className="App-header">
         <div className={classes.header}>
-          {/* <Tooltip
-            title={
-              <React.Fragment>
-                <Typography color="inherit">Tooltip with HTML</Typography>
-                <em>{"And here's"}</em> <b>{"some"}</b>{" "}
-                <u>{"amazing content"}</u>. {"It's very engaging. Right?"}
-              </React.Fragment>
-            }
-          > */}
-          A{/* </Tooltip>{" "} */} s h . v i n
+          <div className={classes.container}>
+            <Typography className={classes.letters}>
+              <a className={classes.link} href="#/about">
+                A
+              </a>
+            </Typography>
+            <Typography className={classes.letters}>
+              <a className={classes.link} href="#/stuff">
+                s
+              </a>
+            </Typography>
+            <Typography className={classes.letters}>
+              <a className={classes.link} href="#/help">
+                h
+              </a>
+            </Typography>
+            <Typography className={classes.letters}>
+              <a className={classes.link} href="#/.github">
+                .
+              </a>
+            </Typography>
+            <Typography className={classes.letters}>
+              <a className={classes.link} href="#/videos">
+                v
+              </a>
+            </Typography>
+            <Typography className={classes.letters}>
+              <a className={classes.link} href="#/internals">
+                i
+              </a>
+            </Typography>
+            <Typography className={classes.letters}>
+              <a className={classes.link} href="#/N">
+                n
+              </a>
+            </Typography>
+          </div>
         </div>
       </header>
     </div>
