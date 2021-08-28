@@ -11,6 +11,7 @@ import Stuff from "./pages/Stuff";
 import CyrillicTextGenerator from "./pages/CyrillicTextGenerator";
 import RuneTextGenerator from "./pages/RuneTextGenerator";
 import SimilarTextGenerator from "./pages/SimilarTextGenerator";
+import CommentSorter from "./pages/CommentSorter";
 import PageNotFound from "./pages/PageNotFound";
 
 // Styling
@@ -36,6 +37,11 @@ const App = () => {
               exact
               path="/stuff/similar"
               component={SimilarTextGenerator}
+            />
+            <Route
+              exact
+              path="/stuff/comment_sorter"
+              component={CommentSorter}
             />
             <Route component={PageNotFound} />
           </Switch>

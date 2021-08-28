@@ -67,6 +67,13 @@ const Stuff = () => {
               >
                 Similar Text Generator
               </Button>
+              <Button
+                className={classes.button}
+                style={{ alignSelf: "center" }}
+                href="#/stuff/comment_sorter"
+              >
+                Comment Sorter
+              </Button>
             </div>
             <Button
               className={classes.button}
