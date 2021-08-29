@@ -77,7 +77,7 @@ const CommentSorter = () => {
                 video, or if there is repetitive phrases or self-promotion.
               </div>
               <div className={classes.column} style={{ marginTop: "1%" }}>
-                "{comment.content.split("\n")[0]}
+                From @{comment.author}:<br />"{comment.content.split("\n")[0]}
                 {comment.content
                   .split("\n")
                   .slice(1)
